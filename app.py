@@ -1,10 +1,5 @@
-import os 
-import subprocess
-from os import system
-from flask import Flask, request, abort, render_template
-from subprocess import Popen
-from pathlib import Path
-from getpass import getuser
+from flask import Flask
+
 
 
 app = Flask(__name__)
