@@ -9,15 +9,6 @@ from getpass import getuser
 
 app = Flask(__name__)
 
-directoriobase = Path(__file__).resolve().parent.parent.parent
-usuario = getuser()
-directorioScript = "usuario"
-
-
-con = os.path.join(directoriobase)
-
-
-# print(con)
 
 #Ruta base
 @app.route("/")
