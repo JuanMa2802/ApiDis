@@ -8,7 +8,7 @@ app = Flask(__name__)
 #Ruta base
 @app.route("/")
 def home():
-    return "<h1 style='color:red;'>Api</h1>"
+    return "<h1>Api Lambda <span style='color:red;'>v2.3</span></h1>"
 
 @app.route("/Api/v3/Contratistas/<string:Id>")
 def Contratistas(Id):
