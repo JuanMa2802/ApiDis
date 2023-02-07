@@ -8,7 +8,7 @@ app = Flask(__name__)
 #Ruta base
 @app.route("/")
 def home():
-    return ("<h1>Api</h1>")
+    return "Api"
 
 # @app.route("/Api/v2/Contratos/<string:Id>")
 # def Contratos(Id):
@@ -33,4 +33,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=9500)
+    app.run()
