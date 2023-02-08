@@ -14,6 +14,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import Select
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
+import requests
 
 opc = webdriver.ChromeOptions()
 
@@ -40,10 +41,11 @@ driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=opc)
 action = ActionChains(driver)
 
 
-driver.get('https://www1.sincoerp.com/SincoArconsa/V3/Marco/Login.aspx')
-time.sleep(5)
+# driver.get('https://www1.sincoerp.com/SincoArconsa/V3/Marco/Login.aspx')
+# time.sleep(5)
 
+ippub = requests.get('http://checkip.amazonaws.com').text.strip()
 idPersona = int(sys.argv[1])
 
 
-print("Hola", idPersona)
+print("Hola", ippub)
